@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'SF Pro Regular';
+    src: url(/src/assets/fonts/SF-Pro-Text-Regular.otf) format('truetype');
+}
+
+@font-face {
+    font-family: 'SF Pro Medium';
+    src: url(/src/assets/fonts/SF-Pro-Text-Medium.otf) format('truetype');
+}
+
+@font-face {
+    font-family: 'SF Pro Semibold';
+    src: url(/src/assets/fonts/SF-Pro-Text-Semibold.otf) format('truetype');
+}
+
+:root {
+    --regular-font: 'SF Pro Regular';
+    --medium-font: 'SF Pro Medium';
+    --semibold-font: 'SF Pro Semibold';
+    --header-letter-spacing: -0.625rem;
+    --subheader-letter-spacing: -0.313rem;
+    --regular-letter-spacing: -0.075rem;
+    --line-height: 5.625rem;
+    --header-size: 6.875rem;
+    --subheader-size: 4.375rem;
+    --regular-size: 1.25rem;
+    --cta-color: #090909;
+    --accent-color: #202020;
+    --sub-color: #676767;
+    --white-color: #FFFFFF;
+}
