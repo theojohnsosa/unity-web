@@ -40,7 +40,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 2rem;
-    height: 100vh;
+    min-height: 100vh;
     background-image: url('/src/assets/images/background.png'), linear-gradient(to bottom, #121212, #1A1A1A);
     background-position: center;
     background-size: cover;
@@ -61,6 +61,8 @@ body {
     position: fixed;
     background: transparent;
     box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
 }
 
 .navbar-container {
@@ -93,6 +95,7 @@ body {
     text-decoration: none;
     color: var(--white-color);
     transition: all 0.1s ease-in-out;
+    letter-spacing: var(--regular-letter-spacing);
 }
 
 .nav-links li a:hover {
@@ -109,12 +112,95 @@ body {
     border-radius: 10px;
     box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.3);
     transition: all 0.2s ease-in-out;
+    letter-spacing: var(--regular-letter-spacing);
 }
 
 #download-button:hover {
     cursor: pointer;
     box-shadow: none;
     background-color: #151515;
+}
+
+.cta-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;    
+}
+
+.cta-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    margin-top: 130px;
+}
+
+.factored-container p {
+    font-family: var(--medium-font);
+    color: var(--sub-color);
+    font-size: var(--regular-size);
+    letter-spacing: var(--regular-letter-spacing);
+}
+
+.cta-text-container h1 {
+    font-family: var(--semibold-font);
+    font-size: var(--header-size);
+    letter-spacing: var(--header-letter-spacing);
+    line-height: var(--line-height);
+    color: var(--white-color);
+}
+
+.cta-buttons-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.cta-buttons-container button {
+    font-family: var(--medium-font);
+    letter-spacing: var(--regular-letter-spacing);
+    padding: 15px 30px;
+    font-size: var(--regular-size);
+    border-radius: 10px;
+    border: none;
+}
+
+#cta-github-button,
+#cta-demo-button {
+    box-sizing: border-box;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.3);
+    transition: all 0.2s ease-in-out;
+}
+
+#cta-github-button:hover,
+#cta-demo-button:hover {
+    cursor: pointer;
+    background: transparent;
+}
+
+#cta-demo-button:hover {
+    color: var(--white-color);
+}
+
+#cta-github-button {
+    background-color: var(--cta-color);
+    color: var(--white-color);
+}
+
+#cta-demo-button {
+    background-color: var(--white-color);
+}
+
+.main-mockup {
+    width: 1100px;
+    height: auto;
 }
 
 @media (max-width: 1024px) {
