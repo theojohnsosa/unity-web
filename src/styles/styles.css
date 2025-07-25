@@ -434,6 +434,45 @@ body {
     color: var(--sub-color);
 }
 
+.faqs-section {
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 20px;
+}
+
+.faqs-container {
+    background-color: var(--white-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.faqs-header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.faqs-header-container h1 {
+    font-family: var(--semibold-font);
+    font-size: var(--subheader-size);
+    letter-spacing: var(--subheader-letter-spacing);
+    margin-bottom: 5px;
+}
+
+.faqs-header-container p {
+    font-family: var(--regular-font);
+    font-size: var(--regular-size);
+    letter-spacing: var(--regular-letter-spacing);
+    color: var(--sub-color);
+}
+
 .faqs-content-container {
     display: flex;
     justify-content: center;
@@ -442,8 +481,57 @@ body {
     width: 60%;
     padding: 10px;
     border-radius: 15px;
-    border: 1px solid var(--secondary-color);
+    border: 1px solid var(--accent-color);
     gap: 10px;
+}
+
+.faqs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.faqs:hover {
+    cursor: pointer;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to bottom, #121212, #1A1A1A);
+    width: 100%;
+    border-radius: 10px;
+    height: 55px;
+    padding: 30px 20px;
+    box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.3);
+}
+
+.faq-question img {
+    width: 35px;
+    height: auto;
+}
+
+.faq-question p {
+    font-family: var(--regular-font);
+    font-size: 16px;
+    letter-spacing: var(--regular-letter-spacing);
+    color: var(--white-color);
+}
+
+.faq-panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+}
+
+.faq-panel p {
+    font-family: var(--primary-font);
+    font-size: 1rem;
 }
 
 @media (max-width: 1024px) {
