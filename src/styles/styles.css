@@ -503,11 +503,21 @@ body {
     text-align: center;
 }
 
+.contact {
+    font-family: var(--regular-font);
+    font-size: var(--regular-size);
+    color: var(--sub-color);
+    letter-spacing: var(--regular-letter-spacing);
+}
 
+.underline {
+    color: var(--cta-color);
+    text-decoration: none;
+}
 
-
-
-
+.underline:hover {
+    text-decoration: underline;
+}
 
 .faqs-section {
     display: flex;
