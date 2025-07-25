@@ -434,6 +434,81 @@ body {
     color: var(--sub-color);
 }
 
+
+
+.devnotes-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: var(--white-color);
+    border-radius: 20px;
+    margin-top: 50px;
+}
+
+.devnotes-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.devnotes-header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.devnotes-header-container h1 {
+    font-family: var(--semibold-font);
+    font-size: var(--subheader-size);
+    letter-spacing: var(--subheader-letter-spacing);
+    margin-bottom: 5px;
+}
+
+.devnotes-header-container p {
+    font-family: var(--regular-font);
+    font-size: var(--regular-size);
+    letter-spacing: var(--regular-letter-spacing);
+    color: var(--sub-color);
+}
+
+.devnotes-content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+    padding: 20px;
+    gap: 20px;
+}
+
+.devnotes {
+    background-color: var(--accent-color);
+    color: var(--white-color);
+    width: 80%;
+    padding: 30px 80px;
+    border-radius: 15px;
+    box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.3);
+}
+
+.devnotes p {
+    font-family: var(--regular-font);
+    font-size: var(--regular-size);
+    letter-spacing: var(--regular-letter-spacing);
+    text-align: center;
+}
+
+
+
+
+
+
+
 .faqs-section {
     display: flex;
     justify-content: center;
