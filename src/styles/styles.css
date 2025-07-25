@@ -621,6 +621,107 @@ body {
     letter-spacing: var(--regular-letter-spacing);
 }
 
+.footer-section {
+    background-color: var(--accent-color);
+    position: relative;
+    left: 50%;
+    right: 50%;
+    width: 100vw;
+    margin-top: 100px;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    box-sizing: border-box;
+    padding: 30px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    gap: 40px;
+}
+
+.copyright-container h1 {
+    font-family: var(--semibold-font);
+    font-size: var(--header-size);
+    letter-spacing: var(--header-letter-spacing);
+    line-height: var(--line-height);
+    color: var(--white-color);
+}
+
+.footer-contact-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.footer-contact-links li {
+    list-style: none;
+}
+
+.footer-contact-links li a {
+    text-decoration: none;
+    color: var(--sub-color);
+    font-family: var(--regular-font);
+    font-size: var(--regular-size);
+    letter-spacing: var(--regular-letter-spacing);
+}
+
+.colophon-container {
+    display: flex;
+    justify-content: center;
+    align-items: first baseline;
+    gap: 150px;
+}
+
+.navigation-container,
+.designs-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.navigation-container p,
+.designs-container p {
+    font-family: var(--medium-font);
+    font-size: 35px;
+    letter-spacing: var(--regular-letter-spacing);
+    margin-bottom: 10px;
+}
+
+.navigation-container li,
+.designs-container li {
+    list-style: none;
+}
+
+.navigation-container li a,
+.designs-container li a {
+    font-family: var(--regular-font);
+    font-size: var(--regular-size);
+    letter-spacing: var(--regular-letter-spacing);
+    color: var(--sub-color);
+    text-decoration: none;
+}
+
+.download-text {
+    font-family: var(--regular-font);
+    font-size: var(--regular-size);
+    letter-spacing: var(--regular-letter-spacing);
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+.download-text:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 @media (max-width: 1024px) {
 
 }
