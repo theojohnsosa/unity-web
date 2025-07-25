@@ -38,9 +38,19 @@
 
 body {
     max-width: 1200px;
-    background-image: url('/src/assets/images/background.png');
+    height: 100vh;
+    margin: 0 auto;
+    padding: 0 2rem;
+    background-image: url('/src/assets/images/background.png'), linear-gradient(to bottom, #121212, #1A1A1A);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: #090909;
+}
+
+@media (max-width: 1024px) {
+    
+}
+  
+@media (max-width: 600px) {
+
 }
