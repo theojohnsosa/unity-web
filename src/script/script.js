@@ -224,3 +224,108 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const sectionMap = {
+        'Overview': '.overview-section',
+        'Features': '.features-section',
+        'Demo': '.demo-section',
+        'Notes': '.devnotes-section', 
+        'FAQs': '.faqs-section' 
+    };
+
+    const navLinks = document.querySelectorAll('.nav-links a');
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            const linkText = link.textContent.trim();
+            const sectionSelector = sectionMap[linkText];
+            if (sectionSelector) {
+                const section = document.querySelector(sectionSelector);
+                if (section) {
+                    e.preventDefault();
+                    section.scrollIntoView({ behavior: 'smooth' });
+                }
+            }
+        });
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const sectionMap = {
+        'View Demo': '.demo-section'
+    };
+
+    const navLinks = document.querySelectorAll('.cta-buttons-container a');
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            const linkText = link.textContent.trim();
+            const sectionSelector = sectionMap[linkText];
+            if (sectionSelector) {
+                const section = document.querySelector(sectionSelector);
+                if (section) {
+                    e.preventDefault();
+                    section.scrollIntoView({ behavior: 'smooth' });
+                }
+            }
+        });
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const sectionMap = {
+        'Key Features': '.features-section'
+    };
+
+    const navLinks = document.querySelectorAll('.overview-content-container a');
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            const linkText = link.textContent.trim();
+            const sectionSelector = sectionMap[linkText];
+            if (sectionSelector) {
+                const section = document.querySelector(sectionSelector);
+                if (section) {
+                    e.preventDefault();
+                    section.scrollIntoView({ behavior: 'smooth' });
+                }
+            }
+        });
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const sectionMap = {
+        'Overview': '.overview-section',
+        'Features': '.features-section',
+        'Demo': '.demo-section',
+        'Notes': '.devnotes-section', 
+        'FAQs': '.faqs-section' 
+    };
+
+    const navLinks = document.querySelectorAll('.navigation-container a');
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            const linkText = link.textContent.trim();
+            const sectionSelector = sectionMap[linkText];
+            if (sectionSelector) {
+                const section = document.querySelector(sectionSelector);
+                if (section) {
+                    e.preventDefault();
+                    section.scrollIntoView({ behavior: 'smooth' });
+                }
+            }
+        });
+    });
+});
+
+const creatorEmailFooter = document.querySelector('.email-link');
+if (creatorEmailFooter) {
+    creatorEmailFooter.style.cursor = 'pointer';
+    creatorEmailFooter.addEventListener('click', function(e) {
+        e.preventDefault();
+        window.location.href = 'mailto:theojohnsosa@gmail.com';
+    });
+}

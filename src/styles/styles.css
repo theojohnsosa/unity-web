@@ -100,6 +100,7 @@ body {
 
 .nav-links li a:hover {
     color: var(--sub-color);
+    text-decoration: underline;
 }
 
 #download-button {
@@ -339,6 +340,13 @@ body {
     height: 320px;
     gap: 20px;
     box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.3);
+    transition: all 0.2s ease-in-out;
+}
+
+.cards:hover {
+    border: 1px solid var(--white-color);
+    box-shadow: 0 2px 2px 1px rgba(255, 255, 255, 0.3);
+    transform: rotate(1deg);
 }
 
 .cards p {
@@ -693,6 +701,7 @@ body {
     font-size: 35px;
     letter-spacing: var(--regular-letter-spacing);
     margin-bottom: 10px;
+    color: var(--white-color);
 }
 
 .navigation-container li,
@@ -707,6 +716,13 @@ body {
     letter-spacing: var(--regular-letter-spacing);
     color: var(--sub-color);
     text-decoration: none;
+}
+
+.footer-contact-links li a:hover,
+.navigation-container li a:hover,
+.designs-container li a:hover {
+    color: var(--white-color);
+    text-decoration: underline;
 }
 
 .download-text {
