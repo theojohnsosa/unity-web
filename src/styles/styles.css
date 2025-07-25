@@ -204,6 +204,79 @@ body {
     height: auto;
 }
 
+.overview-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+}
+
+.overview-container {
+    background-color: var(--white-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    height: 100%;
+    border-radius: 20px;
+    gap: 20px;
+}
+
+.overview-content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.overview-content-container h1 {
+    font-family: var(--semibold-font);
+    font-size: var(--subheader-size);
+    letter-spacing: var(--subheader-letter-spacing);
+    line-height: 3.75rem;
+}
+
+.overview-content-container p {
+    font-family: var(--regular-font);
+    font-size: var(--regular-size);
+    letter-spacing: var(--regular-letter-spacing);
+} 
+
+.overview-content-container button {
+    font-family: var(--medium-font);
+    letter-spacing: var(--regular-letter-spacing);
+    padding: 18px 40px;
+    font-size: var(--regular-size);
+    border-radius: 10px;
+    border: none;
+    background-color: var(--cta-color);
+    color: var(--white-color);
+    box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.3);
+    transition: all 0.2s ease-in-out;
+}
+
+.overview-content-container button:hover {
+    color: var(--cta-color);
+    cursor: pointer;
+    background: transparent;
+}
+
+.overview-mockup-container img {
+    width: 550px;
+    height: auto;
+}
+
+.overview-mockup-container p {
+    font-family: var(--regular-font);
+    font-size: 16px;
+    letter-spacing: var(--regular-letter-spacing);
+    color: var(--sub-color);
+    font-style: italic;
+}
+
 @media (max-width: 1024px) {
 
 }
