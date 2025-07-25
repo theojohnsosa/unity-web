@@ -435,15 +435,16 @@ body {
 }
 
 .faqs-section {
-    background-color: red;
     display: flex;
     justify-content: center;
     align-content: center;
-    padding: 20px;
+    background-color: var(--white-color);
+    padding: 50px;
+    border-radius: 20px;
+    margin-top: 50px;
 }
 
 .faqs-container {
-    background-color: var(--white-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -530,8 +531,9 @@ body {
 }
 
 .faq-panel p {
-    font-family: var(--primary-font);
-    font-size: 1rem;
+    font-family: var(--regular-font);
+    font-size: 16px;
+    letter-spacing: var(--regular-letter-spacing);
 }
 
 @media (max-width: 1024px) {
